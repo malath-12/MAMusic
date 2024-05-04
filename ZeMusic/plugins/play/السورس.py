@@ -29,7 +29,7 @@ reply_markup=InlineKeyboardMarkup(
                     
                 
                     InlineKeyboardButton(
-                        "‹ السورس ›", url=f"https://t.me/sourcerona"),         
+                        "𝐬𝐨𝐮𝐫𝐬 𝐫𝐨𝐧𝐚", url=f"https://t.me/sourcerona"),         
                 ],
 
             ]
