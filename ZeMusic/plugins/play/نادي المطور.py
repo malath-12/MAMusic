@@ -35,17 +35,17 @@ async def call_dev(client: Client, message: Message):
     buttons = [[InlineKeyboardButton(gti, url=f"{link}")]]
     reply_markup = InlineKeyboardMarkup(buttons)
     
-    await app.send_message(OWNER_ID, f"<b>⌯ قام {message.from_user.mention}\n</b>"
-                                     f"<b>⌯ بمناداتك عزيزي المطور\n</b>"
-                                     f"<b>⌯ الأيدي {user_id}\n</b>"
-                                     f"<b>⌯ اليوزر @{user_ab}\n</b>"
-                                     f"<b>⌯ ايدي المجموعة {message.chat.id}\n</b>"
-                                     f"<b>⌯ يوزر المجموعه {chatusername}</b>",
+    await app.send_message(OWNER_ID, f"<b>قام {message.from_user.mention}\n</b>"
+                                     f"<b>بمناداتك عزيزي المطور\n</b>"
+                                     f"<b>الأيدي {user_id}\n</b>"
+                                     f"<b>اليوزر @{user_ab}\n</b>"
+                                     f"<b>ايدي المجموعة {message.chat.id}\n</b>"
+                                     f"<b>يوزر المجموعه {chatusername}</b>",
                                      reply_markup=reply_markup)
 
     # إنشاء زر "اونلاين"
     online_button = InlineKeyboardButton(mname, url=f"https://t.me/{musrnam}")
     
-    await message.reply_text(f"<b>  تم إرسال النداء إلى مطور البوت\n\n⌯ Dev -› @{musrnam} .</b>",
+    await message.reply_text(f"<b>  تم إرسال النداء إلى مطور البوت\n\n Dev -› @{musrnam} .</b>",
                              disable_web_page_preview=True,
                              reply_markup=InlineKeyboardMarkup([[online_button]]))
