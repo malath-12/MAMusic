@@ -28,7 +28,7 @@ async def huhh(client: Client, message: Message):
    
     await message.reply_photo(
         photo="downloads/developer.jpg",
-        caption=f"""<b>⌯ 𝙽𝙰𝙼𝙴 :</b> <a href='https://t.me/{usrnam}'>{name}</a>\n\n<b>⌯ 𝚄𝚂𝙴𝚁 :</b> {usrnam}""",
+        caption=f"""<b>𝙽𝙰𝙼𝙴 :</b> <a href='https://t.me/{usrnam}'>{name}</a>\n\n<b>𝚄𝚂𝙴𝚁 :</b> {usrnam}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -36,7 +36,7 @@ async def huhh(client: Client, message: Message):
                          name, url=f"https://t.me/{usrnam}"), 
                  ],[
                    InlineKeyboardButton(
-                        "•✯ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙺𝙸𝙽𝙶 ✯•", url=f"https://t.me/EF_19"),
+                        "𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐨𝐧𝐚", url=f"https://t.me/sourcerona"),
                 ],
 
             ]
