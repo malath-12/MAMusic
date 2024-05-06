@@ -20,12 +20,12 @@ async def zzzback(_, query: CallbackQuery):
                         "• اوامــر التشغيــل •", callback_data="zzzll"),
                 ],[
                     InlineKeyboardButton(
-                        "• اوامـر القنـاة •", callback_data="zzzch"),
+                        " اوامـر القنـاة ", callback_data="zzzch"),
                     InlineKeyboardButton(
-                        "• اوامـر الادمـن •", callback_data="zzzad"),
+                        " اوامـر الادمـن ", callback_data="zzzad"),
                 ],[
                     InlineKeyboardButton(
-                        "• اوامــر المطــور •", callback_data="zzzdv"),
+                        " اوامــر المطــور ", callback_data="zzzdv"),
                 ],[
                     InlineKeyboardButton(
                         text=config.CHANNEL_NAME, url=config.CHANNEL_LINK),
@@ -44,15 +44,15 @@ async def mpdtsf(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "• التحـديث •", callback_data="zzzup"),
+                        " التحـديث ", callback_data="zzzup"),
                 ],[
                     InlineKeyboardButton(
-                        "• الـرفــع •", callback_data="zzzsu"),
+                        " الـرفــع ", callback_data="zzzsu"),
                     InlineKeyboardButton(
-                        "• الـحظــر •", callback_data="zzzbn"),
+                        " الـحظــر ", callback_data="zzzbn"),
                 ],[
                     InlineKeyboardButton(
-                        "• الاشعــارات & المسـاعــد •", callback_data="zzzas"),
+                        " الاشعــارات & المسـاعــد ", callback_data="zzzas"),
                 ],[
                     InlineKeyboardButton(
                         "رجـوع", callback_data="zzzback"),
