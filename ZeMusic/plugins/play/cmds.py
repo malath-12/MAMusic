@@ -17,7 +17,8 @@ async def zdatsr(client: Client, message: Message):
     usrnam = usr.username
     await message.reply_photo(
         photo=START_IMG_URL,
-        caption=f"""<b>» مرحبـاً بك عـزيـزي </b> {message.from_user.mention} .\n\n<b>» استخـدم الازرار بالاسفـل \n» لـ تصفـح اوامـر الميـوزك </b>""",
+        caption=f"""<b> -› مرحبا بك  </b> {message.from_user.mention} .\n\n<b>-› جميع اوامر البوت موجودة بالقائمة هذي ، اضغط الازرار الي تحت  \n واستكشف ياوحش
+ </b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
