@@ -12,7 +12,7 @@ import config
 @app.on_callback_query(filters.regex("zzzback"))
 async def zzzback(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""<b>» مرحبـاً بك عـزيـزي </b> .\n\n<b>» استخـدم الازرار بالاسفـل \n» لـ تصفـح اوامـر الميـوزك </b>""",
+       f"""<b> -› مرحبا بك </b> .\n\n<b>-› جميع اوامر البوت موجودة بالقائمة هذي ، اضغط الازرار الي تحت \nواستكشف ياوحش </b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -39,7 +39,7 @@ async def zzzback(_, query: CallbackQuery):
 @app.on_callback_query(filters.regex("zzzdv") & SUDOERS)
 async def mpdtsf(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""<b>» مرحبـاً بك عـزيـزي المطـور </b>\n\n<b>» استخـدم الازرار بالاسفـل \n» لـ تصفـح اوامـر الميـوزك </b>""",
+       f"""<b> مرحبـاً بك عـزيـزي المطـور </b>\n\n<b>» استخـدم الازرار بالاسفـل \n» لـ تصفـح اوامـر الميـوزك </b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
