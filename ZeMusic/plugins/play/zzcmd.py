@@ -17,15 +17,15 @@ async def zzzback(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        " اوامــر التشغيــل ", callback_data="zzzll"),
+                        " اوامر التشغيل ", callback_data="zzzll"),
                 ],[
                     InlineKeyboardButton(
-                        " اوامـر القنـاة ", callback_data="zzzch"),
+                        " اوامر القناة ", callback_data="zzzch"),
                     InlineKeyboardButton(
-                        " اوامـر الادمـن ", callback_data="zzzad"),
+                        " اوامر الادمن ", callback_data="zzzad"),
                 ],[
                     InlineKeyboardButton(
-                        " اوامــر المطــور ", callback_data="zzzdv"),
+                        " اوامر المطور ", callback_data="zzzdv"),
                 ],[
                     InlineKeyboardButton(
                         text=config.CHANNEL_NAME, url=config.CHANNEL_LINK),
@@ -39,23 +39,23 @@ async def zzzback(_, query: CallbackQuery):
 @app.on_callback_query(filters.regex("zzzdv") & SUDOERS)
 async def mpdtsf(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""<b> مرحبـاً بك عـزيـزي المطـور </b>\n\n<b> -› استخـدم الازرار بالاسفـل \n -›واستكشف اوامـر الميـوزك </b>""",
+       f"""<b> مرحباً بك عـزيزي المطور </b>\n\n<b> -› استخدم الازرار بالاسفل \n -›واستكشف اوامر الميوزك </b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        " التحـديث ", callback_data="zzzup"),
+                        " التحديث ", callback_data="zzzup"),
                 ],[
                     InlineKeyboardButton(
-                        " الـرفــع ", callback_data="zzzsu"),
+                        " الـرفع ", callback_data="zzzsu"),
                     InlineKeyboardButton(
-                        " الـحظــر ", callback_data="zzzbn"),
+                        " الحظر ", callback_data="zzzbn"),
                 ],[
                     InlineKeyboardButton(
-                        " الاشعــارات & المسـاعــد ", callback_data="zzzas"),
+                        " الاشعارات & المساعد ", callback_data="zzzas"),
                 ],[
                     InlineKeyboardButton(
-                        "رجـوع", callback_data="zzzback"),
+                        "رجوع", callback_data="zzzback"),
                 ],
             ]
         ),
@@ -67,20 +67,20 @@ async def mpdtsf(_, query: CallbackQuery):
 async def zzzll(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
-● <b>قائمــة اوامــر الـتشغـيـل :</b>
+ <b>قائمة اوامر التشغـيل :</b>
 ٴ⋆┄─┄─┄─┄─┄─┄─┄─┄⋆
 تشغيل + (اسم الاغنية / رابط الاغنية)
-<b>- لــ تـشـغـيل اغـنـيـة فـي الـمكـالـمـة الـصـوتـيـة</b>
+<b>- لتشـغيل اغنية في المكالمة الصونية</b>
 
 بحث + الاسـم
-<b>- لـ تحميـل الاغانـي والمقـاطـع الصوتيـه مـن اليوتيـوب</b>
+<b>- لتحميل الاغاغي والمقاطـع الصوتيه من اليوتيوب</b>
 
 """,
        reply_markup=InlineKeyboardMarkup(
           [
                [
                     InlineKeyboardButton(
-                        "رجـوع", callback_data="zzzback"),
+                        "رجوع", callback_data="zzzback"),
                ],
           ]
         ),
@@ -92,14 +92,14 @@ async def zzzll(_, query: CallbackQuery):
 async def zzzad(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
-● <b>قائمــة اوامــر الادمــن :</b>
-ٴ⋆┄─┄─┄─┄─┄─┄─┄─┄⋆
+ <b>قائمة اوامر الادمن :</b>
+
 
 الاعدادات
 <b>- لـ عـرض إعـدادات اوضـاع التشغيـل</b>
 
 ايقاف / اسكت
-<b>- لـ إيقـاف تـشغـيـل الـمـوسـيـقـى فـي المكـالمـة</b>
+<b>- لإيقاف تشغيل الموسيقى في المكالمه</b>
 
 وقف / توقف
 <b>- لـ إيقـاف تشغيـل الموسيـقـى فـي المكالمـة مـؤقتـاً</b>
