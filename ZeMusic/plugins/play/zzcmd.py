@@ -23,9 +23,7 @@ async def zzzback(_, query: CallbackQuery):
                         " اوامر القناة ", callback_data="zzzch"),
                     InlineKeyboardButton(
                         " اوامر الادمن ", callback_data="zzzad"),
-                ],[
-                    InlineKeyboardButton(
-                        " اوامر المطور ", callback_data="zzzdv"),
+                
                 ],[
                     InlineKeyboardButton(
                         text=config.CHANNEL_NAME, url=config.CHANNEL_LINK),
