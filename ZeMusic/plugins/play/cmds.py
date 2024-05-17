@@ -23,12 +23,12 @@ async def zdatsr(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        " اوامــر التشغيــل ", callback_data="zzzll"),
+                        " اوامر التشغيل ", callback_data="zzzll"),
                 ],[
                     InlineKeyboardButton(
-                        " اوامـر القنـاة ", callback_data="zzzch"),
+                        " اوامرالقناه ", callback_data="zzzch"),
                     InlineKeyboardButton(
-                        " اوامـر الادمـن ", callback_data="zzzad"),
+                        " اوامرالادمن ", callback_data="zzzad"),
 
                 ],[
                     InlineKeyboardButton(
