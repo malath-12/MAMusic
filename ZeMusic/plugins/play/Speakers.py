@@ -7,7 +7,7 @@ from ZeMusic.core.call import Mody
 from ZeMusic.utils.database import *
 from pytgcalls.exceptions import (NoActiveGroupCall,TelegramServerError)
 
-@app.on_message(filters.regex("المتكلمين"))
+@app.on_message(filters.regex("مين في الكول"))
 async def strcall(client, message):
     assistant = await group_assistant(Mody,message.chat.id)
     try:
@@ -18,9 +18,9 @@ async def strcall(client, message):
         for participant in participants:
             info = participant
             if info.muted == False:
-                mut="⦗ يتكلم ⦘"
+                mut="يتكلم"
             else:
-                mut="⦗ لا يتكلم ⦘"
+                mut="ساكت "
             user = await client.get_users(participant.user_id)
             k +=1
             text +=f"{k}:{user.mention}↬{mut}\n"
