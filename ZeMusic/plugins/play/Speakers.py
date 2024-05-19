@@ -7,12 +7,12 @@ from ZeMusic.core.call import Mody
 from ZeMusic.utils.database import *
 from pytgcalls.exceptions import (NoActiveGroupCall,TelegramServerError)
 
-@app.on_message(filters.regex("مين في الكول"))
+@app.on_message(filters.regex("من في الكول"))
 async def strcall(client, message):
     assistant = await group_assistant(Mody,message.chat.id)
     try:
         await assistant.join_group_call(message.chat.id, AudioPiped("./strings/call.mp3"), stream_type=StreamType().pulse_stream)
-        text="↯︙الاعضاء المتواجدين في المكالمة المرئية :\n\n"
+        text="الحلوين الي في المكالمه :\n\n"
         participants = await assistant.get_participants(message.chat.id)
         k =0
         for participant in participants:
@@ -20,11 +20,11 @@ async def strcall(client, message):
             if info.muted == False:
                 mut="يتكلم"
             else:
-                mut="ساكت "
+                mut="ساكت"
             user = await client.get_users(participant.user_id)
             k +=1
             text +=f"{k}:{user.mention}↬{mut}\n"
-        text += f"\n↯︙عدد الاشخاص في المكالمة المرئية ↬ ⦗ {len(participants)} ⦘"    
+        text += f"\nعدد الاشخاص في المكالمة المرئية ↬ ⦗ {len(participants)} ⦘"    
         await message.reply(f"{text}")
         await asyncio.sleep(5)
         await assistant.leave_group_call(message.chat.id)
