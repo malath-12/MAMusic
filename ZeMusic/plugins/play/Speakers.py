@@ -22,24 +22,24 @@ async def strcall(client, message):
         for participant in participants:
             info = participant
             if info.muted == False:
-                mut = "~ يتحدث "
+                mut = "يتكلم🗣️"
             else:
-                mut = "~ ساكت"
+                mut = "ساكت 🔕"
             user = await client.get_users(participant.user_id)
             k += 1
             text += f"{k} ~ {user.mention} {mut}\n"
-        text += f"\n~ عددهم : {len(participants)}\n️"  
+        text += f"\nعددهم : {len(participants)}\n️"  
 
         # إضافة زر شفاف في الأسفل
         inline_keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("- قناة البوت . ", url=config.SUPPORT_CHAT)],
+            [InlineKeyboardButton("قناة البوت  ", url=config.SUPPORT_CHAT)],
         ])      
 
         await message.reply(f"{text}", reply_markup=inline_keyboard)
         await asyncio.sleep(7)
         await assistant.leave_group_call(message.chat.id)
     except NoActiveGroupCall:
-        await message.reply(f"- مافي شي شغال ياحلو")
+        await message.reply(f"المكالمة مقفله ياحلو ")
     except TelegramServerError:
         await message.reply(f"- حدث خطأ.")
     except AlreadyJoinedError:
