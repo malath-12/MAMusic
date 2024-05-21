@@ -6,9 +6,9 @@ from sys import version_info
 from time import time
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from YukkiMusic import app
-from YukkiMusic import settingsApp
-from YukkiMusic.utils.decorators.admins import AdminActual
+from ZeMusic import app
+from ZeMusic import settingsApp
+from ZeMusic.utils.decorators.admins import AdminActual
 from strings import get_command
 from strings.filters import command
 
