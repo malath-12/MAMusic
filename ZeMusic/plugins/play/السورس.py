@@ -24,7 +24,7 @@ reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "المطور", url=f"https://t.me/R_J_y"),
+                        "• 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 𝗥𝗼𝗻𝗮", url=f"https://t.me/R_J_y"),
                 ],[
                     
                 
