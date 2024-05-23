@@ -14,7 +14,7 @@ from ZeMusic.utils.decorators.admins import AdminActual
 
 disable_cut = []
 
-@app.on_message(filters.regex("تعطيل الكت") & filters.group)
+@app.on_message(filters.regex("تعطيل كت") & filters.group)
 async def descut(client, message):
       a = await app.get_chat_member(message.chat.id, message.from_user.id)
       id = message.from_user.id
@@ -30,7 +30,7 @@ async def descut(client, message):
         disable_cut.append(cid)
         await message.reply_text(f"- بواسطة {message.from_user.mention}\n- تم تعطيل كت تويت")
         
-@app.on_message(filters.regex("تفعيل الكت") & filters.group)
+@app.on_message(filters.regex("تفعيل كت") & filters.group)
 async def enacut(client, message):
       a = await app.get_chat_member(message.chat.id, message.from_user.id)
       id = message.from_user.id
