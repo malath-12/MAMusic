@@ -10,7 +10,6 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
-from strings import get_command
 from ZeMusic import YouTube, app
 from ZeMusic.core.userbot import assistants
 from ZeMusic.misc import SUDOERS, pymongodb
