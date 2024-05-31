@@ -18,8 +18,8 @@ from ZeMusic.utils.database import (get_global_tops,
                                        get_served_chats,
                                        get_served_users, get_sudoers,
                                        get_top_chats, get_topp_users)
-from YukkiMusic.utils.decorators.language import language, languageCB
-from YukkiMusic.utils.inline.stats import (back_stats_buttons,
+from ZeMusic.utils.decorators.language import language, languageCB
+from ZeMusic.utils.inline.stats import (back_stats_buttons,
                                            back_stats_markup,
                                            get_stats_markup,
                                            overallback_stats_markup,
