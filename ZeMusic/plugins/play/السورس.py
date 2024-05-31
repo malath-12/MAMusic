@@ -26,16 +26,11 @@ reply_markup=InlineKeyboardMarkup(
                     InlineKeyboardButton(
                         "• 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 𝗹𝗶𝘀𝗮", url=f"https://t.me/R_J_y"),
                 ],[
-
-                  InlineKeyboardButton(
-                        "• ضيفني لقروبك 🎻", url=f"https://t.me/Nbsisbot?startgroup=true"
-                   ),
-                ],
-            ]
-        ),
+                    
                 
                     InlineKeyboardButton(
-                        "𝘀𝗼𝘂𝗿𝗰𝗲 𝗹𝗶𝘀𝗮", url=f"https://t.me/),
+                        "𝘀𝗼𝘂𝗿𝗰𝗲 𝗹𝗶𝘀𝗮", url=f"https://t.me/sourcerona"),         
+                ],
 
             ]
 
