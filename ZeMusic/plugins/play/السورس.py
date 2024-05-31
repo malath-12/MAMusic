@@ -35,8 +35,7 @@ reply_markup=InlineKeyboardMarkup(
         ),
                 
                     InlineKeyboardButton(
-                        "𝘀𝗼𝘂𝗿𝗰𝗲 𝗹𝗶𝘀𝗮", url=f"https://t.me/sourcerona"),         
-                ],
+                        "𝘀𝗼𝘂𝗿𝗰𝗲 𝗹𝗶𝘀𝗮", url=f"https://t.me/),
 
             ]
 
