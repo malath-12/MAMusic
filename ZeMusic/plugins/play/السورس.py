@@ -24,12 +24,12 @@ reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "• 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 𝗹𝗶𝘀𝗮", url=f"https://t.me/R_J_y"),
+                        "• 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 Raneem", url=f"https://t.me/R_J_y"),
                 ],[
                     
                 
                     InlineKeyboardButton(
-                        "𝘀𝗼𝘂𝗿𝗰𝗲 𝗹𝗶𝘀𝗮", url=f"https://t.me/sourcerona"),         
+                        "𝘀𝗼𝘂𝗿𝗰𝗲 Raneem", url=f"https://t.me/sourcerona"),         
                 ],
 
             ]
