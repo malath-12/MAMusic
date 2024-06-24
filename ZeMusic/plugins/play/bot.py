@@ -49,7 +49,7 @@ async def UserMusic(client: Client, message: Message):
 
 
 
-@app.on_message(filters.regex(r"^(البايو)$"))
+@app.on_message(filters.regex(r"^(البايو،،،)$"))
 async def BioMusic(client: Client, message: Message):
     usr = await client.get_chat(message.from_user.id)
     bio = usr.bio
